@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+<!--    load properties file -->
+    <context:property-placeholder location="classpath:sport.properties" />
+
+    <bean id="loggerConfig" class="com.clooker.learning_spring_hibernate.LoggerConfig" init-method="initLogger">
+        <property name="rootLoggerLevel" value="FINE" />
+        <property name="printedLoggerLevel" value="FINE"/>
+    </bean>
+
+    <bean id="happyFortuneService" class="com.clooker.learning_spring_hibernate.HappyFortuneService"></bean>
+
+<!--    constructor injection - Spring will pass happyFortuneService into Coach implementation's constructor -->
+    <bean id="coach" class="com.clooker.learning_spring_hibernate.TrackCoach">
+        <constructor-arg ref="happyFortuneService" />
+    </bean>
+
+<!--    setter injection - Spring will call setters -->
+    <bean id="forebodingFortuneService" class="com.clooker.learning_spring_hibernate.ForebodingFortuneService"></bean>
+
+    <bean id="cricketCoach" class="com.clooker.learning_spring_hibernate.CricketCoach">
+        <property name="fortuneService" ref="forebodingFortuneService" />
+
+<!--        using sport.properties file -->
+        <property name="emailAddress" value="${foo.email}" />
+        <property name="team" value="${foo.team}" />
+    </bean>
+</beans>
+
+
+
+
+
