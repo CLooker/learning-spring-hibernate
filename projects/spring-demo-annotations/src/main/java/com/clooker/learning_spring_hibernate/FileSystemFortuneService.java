@@ -3,6 +3,7 @@ package com.clooker.learning_spring_hibernate;
 import org.springframework.stereotype.Component;
 import org.springframework.util.ResourceUtils;
 
+import javax.annotation.PostConstruct;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -12,9 +13,16 @@ import java.util.Random;
 @Component
 public class FileSystemFortuneService implements FortuneService {
 
-  private Object[] fortunes;
+  private String[] fortunes;
 
-  public FileSystemFortuneService() {
+  @Override
+  public String getFortune() {
+    int index = new Random().nextInt(fortunes.length);
+    return fortunes[index].toString();
+  }
+
+  @PostConstruct
+  private void onInit() {
     try {
       Path path = ResourceUtils.getFile("classpath:fortunes.txt").toPath();
       try {
@@ -25,11 +33,5 @@ public class FileSystemFortuneService implements FortuneService {
     } catch (FileNotFoundException e) {
       e.printStackTrace();
     }
-  }
-
-  @Override
-  public String getFortune() {
-    int index = new Random().nextInt(fortunes.length);
-    return fortunes[index].toString();
   }
 }

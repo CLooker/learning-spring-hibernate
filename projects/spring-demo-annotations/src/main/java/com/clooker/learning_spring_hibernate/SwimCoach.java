@@ -1,15 +1,28 @@
 package com.clooker.learning_spring_hibernate;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Value;
 
-@Component
 public class SwimCoach implements Coach {
 
-  @Autowired
-  @Qualifier("randomFortuneService")
   private FortuneService fortuneService;
+
+  @Value("${foo.email}")
+  private String email;
+
+  @Value("${foo.team}")
+  private String team;
+
+  public String getEmail() {
+    return email;
+  }
+
+  public String getTeam() {
+    return team;
+  }
+
+  public SwimCoach(FortuneService fortuneService) {
+    this.fortuneService = fortuneService;
+  }
 
   @Override
   public String getDailyFortune() {
