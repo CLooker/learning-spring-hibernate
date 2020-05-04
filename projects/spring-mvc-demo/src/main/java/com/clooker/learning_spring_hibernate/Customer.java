@@ -1,5 +1,7 @@
 package com.clooker.learning_spring_hibernate;
 
+import com.clooker.learning_spring_hibernate.validation.CourseCode;
+
 import javax.validation.constraints.*;
 
 public class Customer {
@@ -17,6 +19,9 @@ public class Customer {
 
   @Pattern(regexp = "^[0-9]{5}", message = "must be 5 digits")
   private String postalCode;
+
+  @CourseCode(value = "TOPS", message = "must start with TOPS")
+  private String courseCode;
 
   public String getFirstName() {
     return firstName;
@@ -48,5 +53,13 @@ public class Customer {
 
   public void setPostalCode(String postalCode) {
     this.postalCode = postalCode;
+  }
+
+  public String getCourseCode() {
+    return courseCode;
+  }
+
+  public void setCourseCode(String courseCode) {
+    this.courseCode = courseCode;
   }
 }
