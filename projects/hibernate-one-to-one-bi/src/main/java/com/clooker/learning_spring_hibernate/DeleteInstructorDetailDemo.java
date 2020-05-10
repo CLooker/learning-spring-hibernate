@@ -30,7 +30,7 @@ public class DeleteInstructorDetailDemo {
       System.out.println("associated instructor: " + instructorDetail.getInstructor());
 
       // delete instructorDetail
-      // associated instructor will also be deleted due to CascadeType.ALL
+      instructorDetail.getInstructor().setInstructorDetail(null);
       System.out.println("deleting instructorDetail");
       session.delete(instructorDetail);
 
