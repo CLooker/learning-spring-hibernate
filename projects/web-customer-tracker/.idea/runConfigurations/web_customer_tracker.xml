@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="web-customer-tracker" type="TomcatRunner-By-Camtwo" factoryName="Tomcat Runner">
+    <option name="TomcatRunnerV001-Modules" value="{&quot;modules&quot;:[{&quot;context&quot;:&quot;/web-customer-tracker&quot;,&quot;documentBase&quot;:&quot;$PROJECT_DIR$/target/web-customer-tracker&quot;,&quot;internal&quot;:true,&quot;reloadable&quot;:true}]}" />
+    <option name="TomcatRunnerV001-TomcatInstallation" value="/usr/share/apache-tomcat-9.0.34" />
+    <option name="TomcatRunnerV001-VmArgs" value="" />
+    <option name="TomcatRunnerV001-PassParentEnvVars" value="true" />
+    <option name="TomcatRunnerV001-CleanTmpWork" value="false" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
