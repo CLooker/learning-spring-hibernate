@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-demo-aop-read-joinpoint" />
+        <module name="spring-demo-aop" />
+        <module name="spring-demo-aop-pointcut-order" />
+        <module name="spring-demo-annotations" />
         <module name="spring-demo-aop-pointcut-declarations" />
         <module name="spring-demo-aop-pointcut-declarations-combo" />
-        <module name="spring-demo-aop" />
-        <module name="spring-demo-annotations" />
-        <module name="spring-demo-aop-pointcut-order" />
       </profile>
     </annotationProcessing>
   </component>
