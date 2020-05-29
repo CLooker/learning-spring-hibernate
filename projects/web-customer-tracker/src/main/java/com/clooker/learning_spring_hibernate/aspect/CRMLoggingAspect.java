@@ -32,12 +32,11 @@ public class CRMLoggingAspect {
   @Before("forAppFlow()")
   public void before(JoinPoint joinPoint) {
     // display method
-    String method = joinPoint.getSignature().toShortString();
-    logger.info("=====>> in @Before: signature: " + method);
+    String signature = joinPoint.getSignature().toShortString();
+    logger.info("=====>> in @Before: signature: " + signature);
+    System.out.println("HEY HO LET US GO");
 
     // display args
-    Object[] args = joinPoint.getArgs();
-    for (Object arg : args) logger.info("=====>> in @Before: arg: " + arg);
 
   }
 
