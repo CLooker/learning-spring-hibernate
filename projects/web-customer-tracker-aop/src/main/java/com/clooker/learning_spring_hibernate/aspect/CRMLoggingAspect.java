@@ -1,9 +1,11 @@
 package com.clooker.learning_spring_hibernate.aspect;
 
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
+import org.hibernate.mapping.Join;
 import org.springframework.stereotype.Component;
 
 import java.util.logging.Logger;
@@ -33,7 +35,7 @@ public class CRMLoggingAspect {
   public void before(JoinPoint joinPoint) {
     // display method
     String method = joinPoint.getSignature().toShortString();
-    logger.info("=====>> in @Before: signature: " + method);
+    logger.info("=====>> in @Before: method: " + method);
 
     // display args
     Object[] args = joinPoint.getArgs();
@@ -42,5 +44,17 @@ public class CRMLoggingAspect {
   }
 
   // add @AfterReturning advice
+  @AfterReturning(
+    pointcut = "forAppFlow()",
+    returning = "result"
+  )
+  public void afterReturning(JoinPoint joinPoint, Object result) {
+    // display method we are returning from
+    String method = joinPoint.getSignature().toShortString();
+    logger.info("=====>> in @AfterReturning: method: " + method);
+
+    // display result
+    logger.info("=====>> in @AfterReturning: result: " + result);
+  }
 
 }
