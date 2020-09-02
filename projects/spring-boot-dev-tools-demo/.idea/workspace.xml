@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="56a8ff91-3713-4df8-997d-c0cb85c144dd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/.m2/wrapper/dists/apache-maven-3.6.3-bin/1iopthnavndlasol9gbrbg6bf2/apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1gx7JtjZ5fQKCLFr6f418g3oO8D" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-boot-devtools-demo" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.clooker.springbootdemo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SpringBootDemoApplication">
+    <configuration name="SpringBootDemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.clooker.springbootdemo.SpringBootDemoApplication" />
+      <module name="spring-boot-dev-tools-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.clooker.springbootdemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootDemoApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-dev-tools-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.clooker.springbootdemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.clooker.springbootdemo" />
+      <option name="MAIN_CLASS_NAME" value="com.clooker.springbootdemo.SpringBootDemoApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SpringBootDemoApplication" />
+        <item itemvalue="JUnit.SpringBootDemoApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56a8ff91-3713-4df8-997d-c0cb85c144dd" name="Default Changelist" comment="" />
+      <created>1599044321972</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599044321972</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1640" y="700" width="560" height="284" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1599045256545">
+      <screen x="960" y="315" width="1920" height="1080" />
+    </state>
+    <state x="1640" y="700" width="560" height="284" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/960.315.1920.1080/0.706.960.540/2880.0.1080.1920@960.315.1920.1080" timestamp="1599045256545" />
+    <state x="1706" y="595" width="424" height="496" key="FileChooserDialogImpl" timestamp="1599047939806">
+      <screen x="960" y="315" width="1920" height="1080" />
+    </state>
+    <state x="1706" y="595" width="424" height="496" key="FileChooserDialogImpl/960.315.1920.1080/0.706.960.540/2880.0.1080.1920@960.315.1920.1080" timestamp="1599047939806" />
+    <state width="1080" height="895" key="GridCell.Tab.0.bottom" timestamp="1599046768268">
+      <screen x="960" y="315" width="1920" height="1080" />
+    </state>
+    <state width="1080" height="895" key="GridCell.Tab.0.bottom/960.315.1920.1080/0.706.960.540/2880.0.1080.1920@960.315.1920.1080" timestamp="1599046768268" />
+    <state width="1080" height="895" key="GridCell.Tab.0.center" timestamp="1599046768268">
+      <screen x="960" y="315" width="1920" height="1080" />
+    </state>
+    <state width="1080" height="895" key="GridCell.Tab.0.center/960.315.1920.1080/0.706.960.540/2880.0.1080.1920@960.315.1920.1080" timestamp="1599046768268" />
+    <state width="1080" height="895" key="GridCell.Tab.0.left" timestamp="1599046768268">
+      <screen x="960" y="315" width="1920" height="1080" />
+    </state>
+    <state width="1080" height="895" key="GridCell.Tab.0.left/960.315.1920.1080/0.706.960.540/2880.0.1080.1920@960.315.1920.1080" timestamp="1599046768268" />
+    <state width="1080" height="895" key="GridCell.Tab.0.right" timestamp="1599046768268">
+      <screen x="960" y="315" width="1920" height="1080" />
+    </state>
+    <state width="1080" height="895" key="GridCell.Tab.0.right/960.315.1920.1080/0.706.960.540/2880.0.1080.1920@960.315.1920.1080" timestamp="1599046768268" />
+    <state x="1456" y="495" width="924" height="696" key="Maven.ArtifactSearchDialog" timestamp="1599047878839">
+      <screen x="960" y="315" width="1920" height="1080" />
+    </state>
+    <state x="1456" y="495" width="924" height="696" key="Maven.ArtifactSearchDialog/960.315.1920.1080/0.706.960.540/2880.0.1080.1920@960.315.1920.1080" timestamp="1599047878839" />
+    <state x="1321" y="550" width="1195" height="382" key="search.everywhere.popup" timestamp="1599044651115">
+      <screen x="960" y="315" width="1920" height="1080" />
+    </state>
+    <state x="3083" y="417" width="672" height="678" key="search.everywhere.popup/960.315.1920.1080/0.706.960.540/2880.0.1080.1920@2880.0.1080.1920" timestamp="1599044647803" />
+    <state x="1321" y="550" width="1195" height="382" key="search.everywhere.popup/960.315.1920.1080/0.706.960.540/2880.0.1080.1920@960.315.1920.1080" timestamp="1599044651115" />
+  </component>
+</project>
